@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>ArtiGram</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">  
+  <link rel="stylesheet" type="text/css" href="{% static 'content/base.css' %}">  
+</head>
+<body>
+     <div class="jumbotron text-center">
+    <h2><img src="{% static 'content/surya.jpg' %}" class="img-circle" width="100" height="100">&nbsp;&nbsp;&nbsp;SVPHOTOGRAPHY</h2>
+    </div>
+
+<div class="container">    
+  {% block content %}
+  {% endblock %}
+ <center>
+    <a href="https://www.instagram.com/svclicks_/">
+    <img src="{% static 'content/instalogo.png' %}" width="50" height="50">
+ </a><br>
+ <br>
+</center>
+</div>
+
+</body>
+</html>

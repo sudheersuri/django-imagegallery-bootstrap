@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    {% for x in object_list%}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-body"><img src="{{ x.img.url }}" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><b>{{x.user}}</b>: {{x.caption}}<br><i>{{x.dateposted}}</i></div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{{x.dateposted}}

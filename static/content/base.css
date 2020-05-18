@@ -1,0 +1,23 @@
+body
+    {
+        color:white;
+        background-color:black;
+        font: 400 15px/1.8 Lato, sans-serif;
+    
+    }
+    .jumbotron
+    {
+        background-color: black;  
+    }
+    .panel
+    {
+        color:black;
+        border:none;
+    }
+    .panel-body
+    {
+        background-color:none;
+    }
+    i{
+        font-size:15px;
+    }
